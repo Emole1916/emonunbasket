@@ -1,0 +1,56 @@
+html,body{
+  margin:0;
+  background:#030303;
+  overflow:hidden;
+  touch-action:none;
+  image-rendering:pixelated;
+  font-family:Arial;
+}
+
+canvas{
+  display:block;
+  margin:auto;
+  background:linear-gradient(#1a1a1a,#000);
+  pointer-events:none;
+}
+
+#hud{
+  position:fixed;
+  top:10px;
+  width:100%;
+  text-align:center;
+  font-size:44px;
+  color:white;
+  font-weight:bold;
+  z-index:5;
+}
+
+#controls{
+  position:fixed;
+  bottom:10px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  z-index:10;
+}
+
+.pad{
+  display:flex;
+  gap:18px;
+  padding:20px;
+}
+
+.pad button{
+  width:90px;
+  height:90px;
+  font-size:34px;
+  border-radius:50%;
+  border:none;
+  background:#222;
+  color:white;
+}
+
+.pad button:active{
+  background:#ff5500;
+  transform:scale(0.9);
+}
